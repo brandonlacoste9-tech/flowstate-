@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "siteName": "Flowstate Design",
+    "homeDescription": "Calm, conversion-focused website design for local businesses, startups, and creatives."
+  },
+  "nav": {
+    "work": "Work",
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact",
+    "startProject": "Start a project"
+  },
+  "footer": {
+    "blurb": "Websites that feel calm and convert — for local businesses, startups, and creatives.",
+    "rights": "All rights reserved."
+  },
+  "hero": {
+    "eyebrow": "Flowstate Design",
+    "title": "Sites that feel calm and convert.",
+    "subtitle": "Premium web design for local businesses, startups, and personal brands — bilingual-ready, motion-aware, built to win clients.",
+    "ctaPrimary": "Start a project",
+    "ctaSecondary": "See the work"
+  },
+  "trust": {
+    "title": "Built for",
+    "local": "Local businesses",
+    "startups": "Startups & SaaS",
+    "creatives": "Creatives & personal brands"
+  },
+  "home": {
+    "featuredEyebrow": "Selected work",
+    "featuredTitle": "Recent projects",
+    "featuredDescription": "A sample of launches across local services, product marketing, and digital experiences.",
+    "packagesEyebrow": "Packages",
+    "packagesTitle": "Clear offers. Custom when you need it.",
+    "packagesCta": "Compare packages",
+    "processEyebrow": "Process",
+    "processTitle": "From first call to launch",
+    "aboutEyebrow": "Studio",
+    "aboutTitle": "Design in a flow state",
+    "aboutBody": "Flowstate is a design studio focused on calm interfaces and conversion. Based in the Montreal spirit — bilingual, practical, and craft-obsessed.",
+    "aboutCta": "About the studio",
+    "finalTitle": "Ready when you are",
+    "finalBody": "Tell us about your project. We’ll reply with next steps — usually within one business day.",
+    "finalCta": "Contact"
+  },
+  "work": {
+    "title": "Work",
+    "description": "Case studies across local business, product, and brand experiences.",
+    "viewCase": "View case study",
+    "challenge": "Challenge",
+    "approach": "Approach",
+    "outcome": "Outcome"
+  },
+  "services": {
+    "title": "Services",
+    "description": "Productized packages for common launches — plus custom work when your scope is unique.",
+    "includes": "Includes",
+    "from": "From",
+    "customTitle": "Need something custom?",
+    "customBody": "App UI, multi-brand systems, or a rebuild with migration help — let’s scope it together.",
+    "customCta": "Talk about a custom project"
+  },
+  "about": {
+    "title": "About",
+    "lead": "Flowstate Design helps ambitious brands ship websites that feel intentional and perform.",
+    "body": "We blend visual craft with clear structure: message hierarchy, bilingual content, and motion that respects users. The name is the method — deep focus, fewer distractions, better outcomes."
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Share a few details. We’ll get back by email.",
+    "name": "Name",
+    "email": "Email",
+    "projectType": "Project type",
+    "budget": "Budget range",
+    "message": "Message",
+    "submit": "Send message",
+    "sending": "Sending…",
+    "success": "Thanks — your message is in. We’ll reply soon.",
+    "error": "Something went wrong. Please try again or email us directly.",
+    "types": {
+      "launch": "Launch package",
+      "growth": "Growth package",
+      "custom": "Custom project",
+      "other": "Other / not sure"
+    },
+    "budgets": {
+      "u3": "Under $3k",
+      "3to6": "$3k – $6k",
+      "6to12": "$6k – $12k",
+      "12p": "$12k+",
+      "tbd": "Not sure yet"
+    }
+  },
+  "notFound": {
+    "title": "Page not found",
+    "body": "That page doesn’t exist or was moved.",
+    "cta": "Back home"
+  }
+}

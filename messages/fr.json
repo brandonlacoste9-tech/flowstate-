@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "siteName": "Flowstate Design",
+    "homeDescription": "Design web calme et orienté conversion pour commerces locaux, startups et créateurs."
+  },
+  "nav": {
+    "work": "Projets",
+    "services": "Services",
+    "about": "À propos",
+    "contact": "Contact",
+    "startProject": "Démarrer un projet"
+  },
+  "footer": {
+    "blurb": "Des sites calmes qui convertissent — pour commerces locaux, startups et créateurs.",
+    "rights": "Tous droits réservés."
+  },
+  "hero": {
+    "eyebrow": "Flowstate Design",
+    "title": "Des sites calmes qui convertissent.",
+    "subtitle": "Design web premium pour commerces locaux, startups et marques personnelles — prêt pour le bilinguisme, avec du motion soigné.",
+    "ctaPrimary": "Démarrer un projet",
+    "ctaSecondary": "Voir les projets"
+  },
+  "trust": {
+    "title": "Conçu pour",
+    "local": "Commerces locaux",
+    "startups": "Startups et SaaS",
+    "creatives": "Créateurs et marques perso"
+  },
+  "home": {
+    "featuredEyebrow": "Sélection",
+    "featuredTitle": "Projets récents",
+    "featuredDescription": "Lancements pour services locaux, marketing produit et expériences numériques.",
+    "packagesEyebrow": "Forfaits",
+    "packagesTitle": "Offres claires. Sur mesure au besoin.",
+    "packagesCta": "Comparer les forfaits",
+    "processEyebrow": "Processus",
+    "processTitle": "Du premier appel au lancement",
+    "aboutEyebrow": "Studio",
+    "aboutTitle": "Designer en flow state",
+    "aboutBody": "Flowstate est un studio axé sur des interfaces calmes et la conversion. Esprit Montréal — bilingue, pragmatique, obsédé par le craft.",
+    "aboutCta": "À propos du studio",
+    "finalTitle": "Prêt quand vous l’êtes",
+    "finalBody": "Parlez-nous de votre projet. Réponse habituellement en un jour ouvrable.",
+    "finalCta": "Contact"
+  },
+  "work": {
+    "title": "Projets",
+    "description": "Études de cas : commerce local, produit et marque.",
+    "viewCase": "Voir l’étude de cas",
+    "challenge": "Défi",
+    "approach": "Approche",
+    "outcome": "Résultat"
+  },
+  "services": {
+    "title": "Services",
+    "description": "Forfaits productisés pour les lancements courants — et du sur mesure si le périmètre est unique.",
+    "includes": "Inclus",
+    "from": "À partir de",
+    "customTitle": "Besoin de sur mesure ?",
+    "customBody": "UI d’app, système multi-marques, ou refonte avec migration — définissons le périmètre ensemble.",
+    "customCta": "Parler d’un projet sur mesure"
+  },
+  "about": {
+    "title": "À propos",
+    "lead": "Flowstate Design aide les marques ambitieuses à lancer des sites intentionnels et performants.",
+    "body": "Nous allions craft visuel et structure claire : hiérarchie du message, contenu bilingue, et motion respectueux. Le nom est la méthode — focus profond, moins de bruit, meilleurs résultats."
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Quelques détails suffisent. Nous répondons par courriel.",
+    "name": "Nom",
+    "email": "Courriel",
+    "projectType": "Type de projet",
+    "budget": "Budget",
+    "message": "Message",
+    "submit": "Envoyer",
+    "sending": "Envoi…",
+    "success": "Merci — message reçu. Nous revenons vite.",
+    "error": "Une erreur est survenue. Réessayez ou écrivez-nous directement.",
+    "types": {
+      "launch": "Forfait Launch",
+      "growth": "Forfait Growth",
+      "custom": "Projet sur mesure",
+      "other": "Autre / incertain"
+    },
+    "budgets": {
+      "u3": "Moins de 3 k$",
+      "3to6": "3 k$ – 6 k$",
+      "6to12": "6 k$ – 12 k$",
+      "12p": "12 k$ et plus",
+      "tbd": "Pas encore sûr"
+    }
+  },
+  "notFound": {
+    "title": "Page introuvable",
+    "body": "Cette page n’existe pas ou a été déplacée.",
+    "cta": "Retour à l’accueil"
+  }
+}
