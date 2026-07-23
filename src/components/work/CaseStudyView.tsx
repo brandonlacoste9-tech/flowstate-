@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import type { CaseStudy, Locale } from "@/content/types";
 import { Container } from "@/components/ui/Container";
@@ -56,7 +57,23 @@ export async function CaseStudyView({
         </FadeIn>
 
         <FadeIn delay={0.08}>
-          <div className="mt-12">
+          <div className="relative mt-12 aspect-[16/9] overflow-hidden rounded-[var(--radius)] border border-border bg-surface">
+            <Image
+              src={study.image}
+              alt={study.title[locale]}
+              fill
+              priority
+              sizes="(max-width: 1024px) 100vw, 960px"
+              className="object-cover"
+            />
+          </div>
+        </FadeIn>
+
+        <FadeIn delay={0.12}>
+          <div className="mt-8">
+            <p className="mb-3 font-mono text-[10px] uppercase tracking-[0.16em] text-muted">
+              {t("interfaceLabel")}
+            </p>
             <ProjectMock study={study} />
           </div>
         </FadeIn>

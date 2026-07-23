@@ -7,6 +7,7 @@ export const caseStudies: CaseStudy[] = [
     year: "2024",
     featured: true,
     accent: "#1B3A4B",
+    image: "/work/atelier-nord.jpg",
     title: {
       en: "Atelier Nord — booking that matches the cut",
       fr: "Atelier Nord — une réservation digne de la coupe",
@@ -34,6 +35,7 @@ export const caseStudies: CaseStudy[] = [
     year: "2024",
     featured: true,
     accent: "#2A9D8F",
+    image: "/work/clinique-riviera.jpg",
     title: {
       en: "Clinique Riviera — clarity patients can trust",
       fr: "Clinique Riviera — une clarté qui inspire confiance",
@@ -61,6 +63,7 @@ export const caseStudies: CaseStudy[] = [
     year: "2025",
     featured: true,
     accent: "#E9C46A",
+    image: "/work/montreal-trades.jpg",
     title: {
       en: "Montréal Trades — a directory that actually converts",
       fr: "Montréal Trades — un annuaire qui convertit vraiment",
@@ -88,6 +91,7 @@ export const caseStudies: CaseStudy[] = [
     year: "2024",
     featured: false,
     accent: "#9B5DE5",
+    image: "/work/nuit-mtl.jpg",
     title: {
       en: "Nuit MTL — events energy, premium polish",
       fr: "Nuit MTL — l’énergie des soirs, le polish premium",
@@ -115,6 +119,7 @@ export const caseStudies: CaseStudy[] = [
     year: "2025",
     featured: false,
     accent: "#00BBF9",
+    image: "/work/planxo.jpg",
     title: {
       en: "Planxo — an indie SaaS landing that ships confidence",
       fr: "Planxo — un landing SaaS indie qui inspire confiance",
@@ -142,6 +147,7 @@ export const caseStudies: CaseStudy[] = [
     year: "2025",
     featured: false,
     accent: "#F15BB5",
+    image: "/work/adgen.jpg",
     title: {
       en: "AdGen — AI marketing that feels human",
       fr: "AdGen — du marketing IA qui reste humain",

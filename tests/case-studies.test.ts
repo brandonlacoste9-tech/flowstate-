@@ -23,7 +23,14 @@ describe("caseStudies", () => {
       }
     }
   });
+
+  it("every study has a portfolio image path", () => {
+    for (const c of caseStudies) {
+      expect(c.image).toMatch(/^\/work\/.+\.jpe?g$/i);
+    }
+  });
 });
+
 
 describe("packages", () => {
   it("defines exactly three productized tiers", () => {

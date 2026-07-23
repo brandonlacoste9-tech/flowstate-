@@ -1,13 +1,13 @@
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { FadeIn } from "@/components/motion/FadeIn";
 import { getFeaturedCaseStudies } from "@/content/case-studies";
-import { ProjectMock } from "@/components/work/ProjectMock";
 
 export function Hero() {
   const t = useTranslations("hero");
-  const featured = getFeaturedCaseStudies()[0];
+  const featured = getFeaturedCaseStudies();
 
   return (
     <section className="relative overflow-hidden border-b border-border/60">
@@ -28,7 +28,6 @@ export function Hero() {
         aria-hidden
       />
 
-      {/* Subtle flowing path in background */}
       <svg
         className="pointer-events-none absolute inset-x-0 top-8 mx-auto h-48 w-full max-w-5xl opacity-[0.12] sm:h-64"
         viewBox="0 0 800 200"
@@ -102,10 +101,37 @@ export function Hero() {
         </div>
 
         <FadeIn delay={0.18} className="relative">
-          <div className="absolute -inset-4 rounded-[calc(var(--radius)+12px)] bg-accent/5 blur-2xl" aria-hidden />
-          {featured ? (
-            <ProjectMock study={featured} className="relative rotate-1 shadow-2xl" />
-          ) : null}
+          <div
+            className="absolute -inset-4 rounded-[calc(var(--radius)+12px)] bg-accent/5 blur-2xl"
+            aria-hidden
+          />
+          <div className="relative overflow-hidden rounded-[var(--radius)] border border-border shadow-2xl">
+            <div className="relative aspect-[16/11] w-full bg-surface">
+              <Image
+                src="/work/hero-studio.jpg"
+                alt={t("previewCaption")}
+                fill
+                priority
+                sizes="(max-width: 1024px) 100vw, 480px"
+                className="object-cover"
+              />
+            </div>
+            {featured.length > 0 ? (
+              <div className="grid grid-cols-3 gap-px border-t border-border bg-border">
+                {featured.slice(0, 3).map((study) => (
+                  <div key={study.slug} className="relative aspect-[4/3] bg-surface">
+                    <Image
+                      src={study.image}
+                      alt=""
+                      fill
+                      sizes="160px"
+                      className="object-cover opacity-90"
+                    />
+                  </div>
+                ))}
+              </div>
+            ) : null}
+          </div>
           <p className="mt-3 text-center font-mono text-[10px] uppercase tracking-[0.16em] text-muted lg:text-left">
             {t("previewCaption")}
           </p>

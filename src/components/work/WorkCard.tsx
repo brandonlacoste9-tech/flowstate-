@@ -1,6 +1,6 @@
+import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import type { CaseStudy, Locale } from "@/content/types";
-import { ProjectMock } from "@/components/work/ProjectMock";
 import { cn } from "@/lib/utils";
 
 export function WorkCard({
@@ -20,25 +20,33 @@ export function WorkCard({
         className,
       )}
     >
-      <div className="relative overflow-hidden border-b border-border/60 p-3 sm:p-4">
-        <ProjectMock study={study} compact className="pointer-events-none border-0 shadow-none" />
+      <div className="relative aspect-[16/10] overflow-hidden border-b border-border/60 bg-bg">
+        <Image
+          src={study.image}
+          alt={study.title[locale]}
+          fill
+          sizes="(max-width: 768px) 100vw, 33vw"
+          className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+        />
+        <div
+          className="pointer-events-none absolute inset-0 bg-gradient-to-t from-bg/70 via-transparent to-transparent"
+          aria-hidden
+        />
+        <span className="absolute bottom-3 left-4 font-mono text-[10px] uppercase tracking-[0.16em] text-text/90">
+          {study.year}
+        </span>
       </div>
 
       <div className="flex flex-1 flex-col gap-3 p-5">
-        <div className="flex flex-wrap items-center justify-between gap-2">
-          <div className="flex flex-wrap gap-1.5">
-            {study.niche.slice(0, 3).map((tag) => (
-              <span
-                key={tag}
-                className="rounded-full border border-border/80 bg-bg/40 px-2.5 py-0.5 font-mono text-[10px] uppercase tracking-[0.12em] text-muted"
-              >
-                {tag}
-              </span>
-            ))}
-          </div>
-          <span className="font-mono text-[10px] uppercase tracking-[0.16em] text-muted">
-            {study.year}
-          </span>
+        <div className="flex flex-wrap gap-1.5">
+          {study.niche.slice(0, 3).map((tag) => (
+            <span
+              key={tag}
+              className="rounded-full border border-border/80 bg-bg/40 px-2.5 py-0.5 font-mono text-[10px] uppercase tracking-[0.12em] text-muted"
+            >
+              {tag}
+            </span>
+          ))}
         </div>
 
         <h3 className="text-lg font-semibold tracking-tight text-text transition-colors group-hover:text-accent">

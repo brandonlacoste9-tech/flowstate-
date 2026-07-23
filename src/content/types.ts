@@ -8,6 +8,8 @@ export type CaseStudy = {
   year: string;
   featured: boolean;
   accent: string;
+  /** Path under /public, e.g. /work/atelier-nord.jpg */
+  image: string;
   title: LocalizedString;
   summary: LocalizedString;
   challenge: LocalizedString;
