@@ -1,7 +1,7 @@
 {
   "meta": {
     "siteName": "Flowstate Design",
-    "homeDescription": "Design web calme et orienté conversion pour commerces locaux, startups et créateurs."
+    "homeDescription": "Design web calme et orienté conversion pour commerces locaux, startups et créateurs. Ancré à Montréal, pleinement bilingue EN/FR."
   },
   "nav": {
     "work": "Projets",
@@ -12,20 +12,40 @@
   },
   "footer": {
     "blurb": "Des sites calmes qui convertissent — pour commerces locaux, startups et créateurs.",
+    "location": "Montréal · Bilingue EN / FR",
     "rights": "Tous droits réservés."
   },
   "hero": {
-    "eyebrow": "Flowstate Design",
-    "title": "Des sites calmes qui convertissent.",
-    "subtitle": "Design web premium pour commerces locaux, startups et marques personnelles — prêt pour le bilinguisme, avec du motion soigné.",
+    "eyebrow": "Studio montréalais · EN / FR",
+    "title": "Des sites calmes qui gagnent des clients.",
+    "subtitle": "Flowstate conçoit des sites bilingues avec une structure claire, un motion discret et des parcours de conversion fluides — pour commerces locaux, startups et marques personnelles.",
+    "point1": "Lancement en semaines, pas en mois",
+    "point2": "EN + FR dès le premier jour",
+    "point3": "Du craft qui convertit encore",
     "ctaPrimary": "Démarrer un projet",
-    "ctaSecondary": "Voir les projets"
+    "ctaSecondary": "Voir les projets",
+    "previewCaption": "Aperçu d’interfaces tirées de lancements récents"
+  },
+  "proof": {
+    "montreal": "Ancré à Montréal",
+    "montrealDetail": "Pensé pour le Québec et le Canada — contexte local, finition mondiale.",
+    "bilingual": "Vraiment bilingue",
+    "bilingualDetail": "Systèmes de contenu EN / FR, pas des traductions après coup.",
+    "response": "Réponses rapides",
+    "responseDetail": "Habituellement en un jour ouvrable pour les nouvelles demandes.",
+    "craft": "Motion soigné",
+    "craftDetail": "Sensation premium qui respecte le reduced-motion."
   },
   "trust": {
     "title": "Conçu pour",
     "local": "Commerces locaux",
     "startups": "Startups et SaaS",
     "creatives": "Créateurs et marques perso"
+  },
+  "testimonials": {
+    "eyebrow": "Voix clients",
+    "title": "La preuve par le travail",
+    "description": "Quelques mots de personnes qui ont livré avec Flowstate — salons, startups et marques personnelles."
   },
   "home": {
     "featuredEyebrow": "Sélection",
@@ -50,7 +70,9 @@
     "viewCase": "Voir l’étude de cas",
     "challenge": "Défi",
     "approach": "Approche",
-    "outcome": "Résultat"
+    "outcome": "Résultat",
+    "cta": "Lancer un projet similaire",
+    "ctaBody": "Envie de résultats comme ceux-ci pour votre marque ? Définissons un lancement."
   },
   "services": {
     "title": "Services",
@@ -64,11 +86,14 @@
   "about": {
     "title": "À propos",
     "lead": "Flowstate Design aide les marques ambitieuses à lancer des sites intentionnels et performants.",
-    "body": "Nous allions craft visuel et structure claire : hiérarchie du message, contenu bilingue, et motion respectueux. Le nom est la méthode — focus profond, moins de bruit, meilleurs résultats."
+    "body": "Nous allions craft visuel et structure claire : hiérarchie du message, contenu bilingue, et motion respectueux. Le nom est la méthode — focus profond, moins de bruit, meilleurs résultats.",
+    "locationTitle": "Où nous travaillons",
+    "locationBody": "Ancrés à Montréal, clients au Québec et ailleurs. Chaque projet peut livrer un vrai bilinguisme — EN et FR au premier plan."
   },
   "contact": {
     "title": "Contact",
-    "description": "Quelques détails suffisent. Nous répondons par courriel.",
+    "description": "Quelques détails suffisent. Réponse par courriel — habituellement en un jour ouvrable.",
+    "directEmail": "Préférez le courriel ?",
     "name": "Nom",
     "email": "Courriel",
     "projectType": "Type de projet",
@@ -77,7 +102,7 @@
     "submit": "Envoyer",
     "sending": "Envoi…",
     "success": "Merci — message reçu. Nous revenons vite.",
-    "error": "Une erreur est survenue. Réessayez ou écrivez-nous directement.",
+    "error": "Une erreur est survenue. Réessayez ou écrivez à hello@flowstate-design.co.",
     "types": {
       "launch": "Forfait Launch",
       "growth": "Forfait Growth",

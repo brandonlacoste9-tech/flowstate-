@@ -3,6 +3,8 @@ import type { CaseStudy, Locale } from "@/content/types";
 import { Container } from "@/components/ui/Container";
 import { FadeIn } from "@/components/motion/FadeIn";
 import { Link } from "@/i18n/navigation";
+import { ProjectMock } from "@/components/work/ProjectMock";
+import { Button } from "@/components/ui/Button";
 
 export async function CaseStudyView({
   study,
@@ -24,10 +26,7 @@ export async function CaseStudyView({
       <Container>
         <FadeIn>
           <p className="mb-6 font-mono text-xs uppercase tracking-[0.16em] text-muted">
-            <Link
-              href="/work"
-              className="transition-colors hover:text-accent"
-            >
+            <Link href="/work" className="transition-colors hover:text-accent">
               {t("title")}
             </Link>
             <span className="mx-2 text-border" aria-hidden>
@@ -57,46 +56,8 @@ export async function CaseStudyView({
         </FadeIn>
 
         <FadeIn delay={0.08}>
-          <div
-            className="relative mt-12 overflow-hidden rounded-[var(--radius)] border border-border"
-            style={{
-              background: `linear-gradient(135deg, ${study.accent}33 0%, transparent 50%), linear-gradient(160deg, #132033 0%, #0b1220 100%)`,
-            }}
-          >
-            <div
-              className="absolute inset-0 opacity-50"
-              style={{
-                backgroundImage: `radial-gradient(circle at 18% 25%, ${study.accent}66, transparent 42%), radial-gradient(circle at 82% 70%, ${study.accent}40, transparent 38%)`,
-              }}
-              aria-hidden
-            />
-
-            <div className="relative flex min-h-[220px] flex-col justify-between p-6 sm:min-h-[320px] sm:p-10">
-              <div className="flex items-center gap-2">
-                <span className="h-2.5 w-2.5 rounded-full bg-border" />
-                <span className="h-2.5 w-2.5 rounded-full bg-border" />
-                <span className="h-2.5 w-2.5 rounded-full bg-border" />
-                <span className="ml-3 font-mono text-[10px] uppercase tracking-[0.16em] text-muted">
-                  flowstate.design
-                </span>
-              </div>
-
-              <div className="mt-16 flex items-end justify-between gap-4 sm:mt-24">
-                <div>
-                  <p className="font-mono text-[10px] uppercase tracking-[0.16em] text-muted">
-                    Project
-                  </p>
-                  <p className="mt-2 text-2xl font-semibold tracking-tight text-text sm:text-3xl">
-                    {study.title[locale].split("—")[0].trim()}
-                  </p>
-                </div>
-                <span
-                  className="h-3 w-3 shrink-0 rounded-full"
-                  style={{ backgroundColor: study.accent }}
-                  aria-hidden
-                />
-              </div>
-            </div>
+          <div className="mt-12">
+            <ProjectMock study={study} />
           </div>
         </FadeIn>
 
@@ -114,6 +75,13 @@ export async function CaseStudyView({
             </FadeIn>
           ))}
         </div>
+
+        <FadeIn delay={0.2}>
+          <div className="mt-16 flex flex-col items-start justify-between gap-4 rounded-[var(--radius)] border border-border/80 bg-surface/40 p-6 sm:flex-row sm:items-center">
+            <p className="text-sm text-muted">{t("ctaBody")}</p>
+            <Button href="/contact">{t("cta")}</Button>
+          </div>
+        </FadeIn>
       </Container>
     </article>
   );

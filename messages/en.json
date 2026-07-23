@@ -1,7 +1,7 @@
 {
   "meta": {
     "siteName": "Flowstate Design",
-    "homeDescription": "Calm, conversion-focused website design for local businesses, startups, and creatives."
+    "homeDescription": "Calm, conversion-focused website design for local businesses, startups, and creatives. Montreal-rooted, fully bilingual EN/FR."
   },
   "nav": {
     "work": "Work",
@@ -12,20 +12,40 @@
   },
   "footer": {
     "blurb": "Websites that feel calm and convert — for local businesses, startups, and creatives.",
+    "location": "Montreal · Bilingual EN / FR",
     "rights": "All rights reserved."
   },
   "hero": {
-    "eyebrow": "Flowstate Design",
-    "title": "Sites that feel calm and convert.",
-    "subtitle": "Premium web design for local businesses, startups, and personal brands — bilingual-ready, motion-aware, built to win clients.",
+    "eyebrow": "Montreal design studio · EN / FR",
+    "title": "Calm sites that win clients.",
+    "subtitle": "Flowstate designs bilingual websites with clear structure, quiet motion, and conversion paths that feel effortless — for local businesses, startups, and personal brands.",
+    "point1": "Launch in weeks, not months",
+    "point2": "EN + FR from day one",
+    "point3": "Craft that still converts",
     "ctaPrimary": "Start a project",
-    "ctaSecondary": "See the work"
+    "ctaSecondary": "See the work",
+    "previewCaption": "Sample interface craft from recent launches"
+  },
+  "proof": {
+    "montreal": "Montreal-rooted",
+    "montrealDetail": "Built for Quebec & Canada — local context, global polish.",
+    "bilingual": "Truly bilingual",
+    "bilingualDetail": "EN / FR content systems, not afterthought translations.",
+    "response": "Fast replies",
+    "responseDetail": "Usually within one business day on new inquiries.",
+    "craft": "Motion with care",
+    "craftDetail": "Premium feel that still respects reduced-motion preferences."
   },
   "trust": {
     "title": "Built for",
     "local": "Local businesses",
     "startups": "Startups & SaaS",
     "creatives": "Creatives & personal brands"
+  },
+  "testimonials": {
+    "eyebrow": "Client voices",
+    "title": "Proof in the work",
+    "description": "A few words from people who shipped with Flowstate — salons, startups, and personal brands."
   },
   "home": {
     "featuredEyebrow": "Selected work",
@@ -50,7 +70,9 @@
     "viewCase": "View case study",
     "challenge": "Challenge",
     "approach": "Approach",
-    "outcome": "Outcome"
+    "outcome": "Outcome",
+    "cta": "Start a similar project",
+    "ctaBody": "Want results like this for your brand? Let’s scope a launch."
   },
   "services": {
     "title": "Services",
@@ -64,11 +86,14 @@
   "about": {
     "title": "About",
     "lead": "Flowstate Design helps ambitious brands ship websites that feel intentional and perform.",
-    "body": "We blend visual craft with clear structure: message hierarchy, bilingual content, and motion that respects users. The name is the method — deep focus, fewer distractions, better outcomes."
+    "body": "We blend visual craft with clear structure: message hierarchy, bilingual content, and motion that respects users. The name is the method — deep focus, fewer distractions, better outcomes.",
+    "locationTitle": "Where we work",
+    "locationBody": "Rooted in Montreal with clients across Quebec and beyond. Every build can ship fully bilingual — EN and FR as first-class citizens."
   },
   "contact": {
     "title": "Contact",
-    "description": "Share a few details. We’ll get back by email.",
+    "description": "Share a few details. We’ll get back by email — usually within one business day.",
+    "directEmail": "Prefer email?",
     "name": "Name",
     "email": "Email",
     "projectType": "Project type",
@@ -77,7 +102,7 @@
     "submit": "Send message",
     "sending": "Sending…",
     "success": "Thanks — your message is in. We’ll reply soon.",
-    "error": "Something went wrong. Please try again or email us directly.",
+    "error": "Something went wrong. Please try again or email us directly at hello@flowstate-design.co.",
     "types": {
       "launch": "Launch package",
       "growth": "Growth package",

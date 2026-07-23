@@ -49,6 +49,27 @@ body {
   animation: flow-drift 14s ease-in-out infinite;
 }
 
+@keyframes wave-draw {
+  0%,
+  100% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 12;
+  }
+}
+
+.logo-wave {
+  stroke-dasharray: 48 12;
+  animation: wave-draw 6s ease-in-out infinite;
+}
+
+.logo-wave-delay {
+  stroke-dasharray: 40 16;
+  animation: wave-draw 7.5s ease-in-out infinite;
+  animation-delay: 0.4s;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -61,7 +82,10 @@ body {
     transition-duration: 0.01ms !important;
   }
 
-  .flow-orb {
+  .flow-orb,
+  .logo-wave,
+  .logo-wave-delay {
     animation: none;
   }
 }
+

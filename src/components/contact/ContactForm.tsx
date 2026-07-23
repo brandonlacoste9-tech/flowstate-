@@ -25,6 +25,7 @@ export function ContactForm() {
     useState<(typeof projectTypes)[number]>("launch");
   const [budget, setBudget] = useState<(typeof budgets)[number]>("tbd");
   const [message, setMessage] = useState("");
+  const [company, setCompany] = useState("");
   const [state, setState] = useState<FormState>("idle");
 
   async function onSubmit(e: FormEvent<HTMLFormElement>) {
@@ -42,6 +43,7 @@ export function ContactForm() {
           budget,
           message,
           locale,
+          company,
         }),
       });
 
@@ -56,6 +58,7 @@ export function ContactForm() {
       setProjectType("launch");
       setBudget("tbd");
       setMessage("");
+      setCompany("");
     } catch {
       setState("error");
     }
@@ -64,7 +67,24 @@ export function ContactForm() {
   const sending = state === "sending";
 
   return (
-    <form onSubmit={onSubmit} className="mt-10 max-w-xl space-y-5" noValidate>
+    <form onSubmit={onSubmit} className="relative mt-10 max-w-xl space-y-5" noValidate>
+      {/* Honeypot — hidden from humans */}
+      <div
+        className="absolute -left-[9999px] h-0 w-0 overflow-hidden"
+        aria-hidden
+      >
+        <label htmlFor="contact-company">Company</label>
+        <input
+          id="contact-company"
+          name="company"
+          type="text"
+          tabIndex={-1}
+          autoComplete="off"
+          value={company}
+          onChange={(e) => setCompany(e.target.value)}
+        />
+      </div>
+
       <div>
         <label htmlFor="contact-name" className={labelClass}>
           {t("name")}

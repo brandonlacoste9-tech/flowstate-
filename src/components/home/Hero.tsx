@@ -2,9 +2,12 @@ import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { FadeIn } from "@/components/motion/FadeIn";
+import { getFeaturedCaseStudies } from "@/content/case-studies";
+import { ProjectMock } from "@/components/work/ProjectMock";
 
 export function Hero() {
   const t = useTranslations("hero");
+  const featured = getFeaturedCaseStudies()[0];
 
   return (
     <section className="relative overflow-hidden border-b border-border/60">
@@ -25,32 +28,87 @@ export function Hero() {
         aria-hidden
       />
 
-      <Container className="relative py-20 sm:py-28 lg:py-32">
-        <FadeIn>
-          <p className="mb-4 font-mono text-xs uppercase tracking-[0.18em] text-accent">
-            {t("eyebrow")}
+      {/* Subtle flowing path in background */}
+      <svg
+        className="pointer-events-none absolute inset-x-0 top-8 mx-auto h-48 w-full max-w-5xl opacity-[0.12] sm:h-64"
+        viewBox="0 0 800 200"
+        fill="none"
+        aria-hidden
+      >
+        <path
+          d="M0 120 C120 40, 200 180, 320 100 S520 20, 640 90 S760 160, 800 80"
+          className="stroke-accent logo-wave"
+          strokeWidth="2"
+        />
+        <path
+          d="M0 150 C140 80, 220 190, 360 130 S540 50, 680 110 S760 170, 800 120"
+          className="stroke-accent/50 logo-wave-delay"
+          strokeWidth="1.5"
+        />
+      </svg>
+
+      <Container className="relative grid items-center gap-12 py-16 sm:py-24 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10 lg:py-28">
+        <div>
+          <FadeIn>
+            <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-border/80 bg-surface/50 px-3 py-1 font-mono text-[11px] uppercase tracking-[0.14em] text-accent">
+              <span className="h-1.5 w-1.5 rounded-full bg-accent" aria-hidden />
+              {t("eyebrow")}
+            </p>
+          </FadeIn>
+
+          <FadeIn delay={0.08}>
+            <h1 className="max-w-xl text-4xl font-semibold tracking-tight text-text sm:text-5xl lg:text-[3.25rem] lg:leading-[1.08]">
+              {t("title")}
+            </h1>
+          </FadeIn>
+
+          <FadeIn delay={0.16}>
+            <p className="mt-6 max-w-lg text-lg leading-relaxed text-muted sm:text-xl">
+              {t("subtitle")}
+            </p>
+          </FadeIn>
+
+          <FadeIn delay={0.22}>
+            <ul className="mt-6 flex flex-wrap gap-x-4 gap-y-2 text-sm text-muted">
+              <li className="flex items-center gap-2">
+                <span className="text-accent" aria-hidden>
+                  ✓
+                </span>
+                {t("point1")}
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="text-accent" aria-hidden>
+                  ✓
+                </span>
+                {t("point2")}
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="text-accent" aria-hidden>
+                  ✓
+                </span>
+                {t("point3")}
+              </li>
+            </ul>
+          </FadeIn>
+
+          <FadeIn delay={0.28}>
+            <div className="mt-10 flex flex-wrap items-center gap-3">
+              <Button href="/contact">{t("ctaPrimary")}</Button>
+              <Button href="/work" variant="secondary">
+                {t("ctaSecondary")}
+              </Button>
+            </div>
+          </FadeIn>
+        </div>
+
+        <FadeIn delay={0.18} className="relative">
+          <div className="absolute -inset-4 rounded-[calc(var(--radius)+12px)] bg-accent/5 blur-2xl" aria-hidden />
+          {featured ? (
+            <ProjectMock study={featured} className="relative rotate-1 shadow-2xl" />
+          ) : null}
+          <p className="mt-3 text-center font-mono text-[10px] uppercase tracking-[0.16em] text-muted lg:text-left">
+            {t("previewCaption")}
           </p>
-        </FadeIn>
-
-        <FadeIn delay={0.08}>
-          <h1 className="max-w-3xl text-4xl font-semibold tracking-tight text-text sm:text-5xl lg:text-6xl lg:leading-[1.08]">
-            {t("title")}
-          </h1>
-        </FadeIn>
-
-        <FadeIn delay={0.16}>
-          <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted sm:text-xl">
-            {t("subtitle")}
-          </p>
-        </FadeIn>
-
-        <FadeIn delay={0.24}>
-          <div className="mt-10 flex flex-wrap items-center gap-3">
-            <Button href="/contact">{t("ctaPrimary")}</Button>
-            <Button href="/work" variant="secondary">
-              {t("ctaSecondary")}
-            </Button>
-          </div>
         </FadeIn>
       </Container>
     </section>

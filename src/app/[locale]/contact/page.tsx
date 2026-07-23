@@ -32,6 +32,15 @@ export default async function ContactPage({
       <Container>
         <FadeIn>
           <SectionHeading title={t("title")} description={t("description")} />
+          <p className="mt-4 text-sm text-muted">
+            {t("directEmail")}{" "}
+            <a
+              href="mailto:hello@flowstate-design.co"
+              className="text-accent transition-colors hover:text-accent-hover"
+            >
+              hello@flowstate-design.co
+            </a>
+          </p>
         </FadeIn>
         <FadeIn delay={0.08}>
           <ContactForm />

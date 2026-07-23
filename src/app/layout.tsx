@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     template: "%s · Flowstate Design",
   },
   description:
-    "Calm, conversion-focused website design for local businesses, startups, and creatives.",
+    "Calm, conversion-focused website design for local businesses, startups, and creatives. Montreal-rooted, bilingual EN/FR.",
 };
 
 export default function RootLayout({
@@ -37,3 +37,4 @@ export default function RootLayout({
     </html>
   );
 }
+

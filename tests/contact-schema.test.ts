@@ -23,4 +23,16 @@ describe("contactSchema", () => {
     });
     expect(parsed.success).toBe(false);
   });
+
+  it("rejects filled honeypot company field", () => {
+    const parsed = contactSchema.safeParse({
+      name: "Alex",
+      email: "alex@example.com",
+      projectType: "growth",
+      budget: "3to6",
+      message: "We need a new marketing site for our clinic.",
+      company: "spam-bot-inc",
+    });
+    expect(parsed.success).toBe(false);
+  });
 });

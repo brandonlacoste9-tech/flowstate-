@@ -44,6 +44,16 @@ export default async function AboutPage({
               {t("body")}
             </p>
           </FadeIn>
+          <FadeIn delay={0.14}>
+            <div className="mt-10 max-w-2xl rounded-[var(--radius)] border border-border/80 bg-surface/40 p-6">
+              <p className="font-mono text-xs uppercase tracking-[0.16em] text-accent">
+                {t("locationTitle")}
+              </p>
+              <p className="mt-3 text-sm leading-relaxed text-muted">
+                {t("locationBody")}
+              </p>
+            </div>
+          </FadeIn>
         </Container>
       </section>
 

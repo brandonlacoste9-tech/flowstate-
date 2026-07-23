@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
+import { LogoMark } from "@/components/brand/LogoMark";
 import { LanguageToggle } from "./LanguageToggle";
 import { cn } from "@/lib/utils";
 
@@ -22,12 +23,7 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 border-b border-border/80 bg-bg/80 backdrop-blur-md">
       <Container className="flex h-16 items-center justify-between gap-4">
-        <Link href="/" className="font-semibold tracking-[0.14em] text-text">
-          FLOWSTATE
-          <span className="ml-1 text-accent" aria-hidden>
-            ●
-          </span>
-        </Link>
+        <LogoMark />
 
         <nav
           aria-label="Primary"
