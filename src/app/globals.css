@@ -35,6 +35,20 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@keyframes flow-drift {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(4%, -3%, 0) scale(1.05);
+  }
+}
+
+.flow-orb {
+  animation: flow-drift 14s ease-in-out infinite;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -45,5 +59,9 @@ body {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+  }
+
+  .flow-orb {
+    animation: none;
   }
 }
